@@ -1,12 +1,9 @@
 {
-    "menuName":"API project",
+    "menuName":"Jcface API文档",
     "menuList":[
-                {"href":"api-md/gitpage.md", "name":"GitPages使用"},
-                {"href":"api-md/test2.img", "name":"人脸识别"},
-                {"href":"api-md/test.md", "name":"test"},
-                {"href":"api-md/tomcat8.md", "name":"tomcat"},
-                {"href":"api-md/datastruct.md", "name":"去除数组中重复数字"}
+                {"href":"api-md/jcface.md", "name":"人脸识别API"},
+                {"href":"api-md/error.img", "name":"错误信息"}
              ],
-    "mainContent": "api-md/test2.img"
+    "mainContent": "api-md/jcface.md"
 
 }
