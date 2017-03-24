@@ -3,15 +3,15 @@
 API请求失败时返回的错误信息说明。其中msg字段包括具体错误信息说明，status是错误代码。
 
 # 目录
-* [4001: APPID_APPSECRET_NOT_FOUND](https://jeocloud-tech.github.io)
-* [201: EMPTY_PICTURE](https://jeocloud-tech.github.io)
-* [202: FACE_NOT_DETECT](https://jeocloud-tech.github.io)
-* [204: TOO_MANY_REQUEST](https://jeocloud-tech.github.io)
-* [403: BROKEN_IMAGE](https://jeocloud-tech.github.io)
+* [4001: APPID_APPSECRET_NOT_FOUND](#appid_appsecret_not_found)
+* [201: EMPTY_PICTURE](#empty_picture)
+* [202: FACE_NOT_DETECT](#face_not_detect)
+* [204: TOO_MANY_REQUEST](#too_many_request)
+* [403: BROKEN_IMAGE](#broken_image)
 
 ---------
 
-# APPID_APPSECRET_NOT_FOUND
+# <span id = "appid_appsecret_not_found">APPID_APPSECRET_NOT_FOUND</span>
 
 appId或者appSecret验证信息出错，请联系厂商检查
 
@@ -24,7 +24,7 @@ appId或者appSecret验证信息出错，请联系厂商检查
 
 ---------
 
-# EMPTY_PICTURE
+# <span id = "empty_picture">EMPTY_PICTURE</span>
 
 请求的图片参数为空，请检查对应的图片参数
 
@@ -37,7 +37,7 @@ appId或者appSecret验证信息出错，请联系厂商检查
 
 ---------
 
-# FACE_NOT_DETECT
+# <span id = "face_not_detect">FACE_NOT_DETECT</span>
 
 图片中检测不到人脸，请确保人脸尺寸大于40*40
 
@@ -50,7 +50,7 @@ appId或者appSecret验证信息出错，请联系厂商检查
 
 ---------
 
-# TOO_MANY_REQUEST
+# <span id = "too_many_request">TOO_MANY_REQUEST</span>
 
 请求过于频繁，请稍后
 
@@ -63,7 +63,7 @@ appId或者appSecret验证信息出错，请联系厂商检查
 
 ---------
 
-# BROKEN_IMAGE
+# <span id = "broken_image">BROKEN_IMAGE</span>
 
 请求的图片格式应为JPG，PNG，BMP格式，请检查格式是否正确或者图片是否损坏
 

@@ -3,11 +3,11 @@
 调用者提供图片文件或者图片URL，进行人脸检测和人脸分析。
 
 # 目录
-* [/v1/compare](https://jeocloud-tech.github.io#v1compare)
+* [/v1/compare](#v1compare)
 
 ---------
 
-## /v1/compare
+## <span id = "v1compare">/v1/compare</span>
 
 ## 功能
 
