@@ -2,7 +2,7 @@
     "menuName":"Jcface API文档",
     "menuList":[
                 {"href":"api-md/jcface.md", "name":"人脸识别API"},
-                {"href":"api-md/error.img", "name":"错误信息"}
+                {"href":"api-md/error.md", "name":"错误信息"}
              ],
     "mainContent": "api-md/jcface.md"
 
