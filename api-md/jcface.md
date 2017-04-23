@@ -3,8 +3,78 @@
 调用者提供图片文件或者图片URL，进行人脸检测和人脸分析。
 
 # 目录
+* [/v1/landmark](https://jeocloud-tech.github.io#v1landmark)
 * [/v1/feature](https://jeocloud-tech.github.io#v1feature)
 * [/v1/compare](https://jeocloud-tech.github.io#v1compare)
+
+---------
+
+## <span id = "v1landmark">/v1/landmark</span>
+
+## 功能
+
+获取人脸定位框及特征锚点位置信息
+
+## 请求方式
+
+HTTP POST
+
+## 地址
+
+http://api.jeocloud.com/jcfacepp/v1/landmark
+
+## 参数
+
+```md
+appId: "cf53be77-f788-4353-8ae5-ce8346bf6d7f" //字符串，app id
+appSecret: "46d41864-5cf9-4405-8f91-04c022edbe14" //字符串，app secret
+file: //上传提取特征的图片
+```
+
+## 响应
+
+```md
+{
+    "status": 200,
+    "msg": "OK",
+    "data": [
+        {
+            "landmark": {          // 检测到的其中一个人脸信息
+                "x": 87,           // 表示一个脸的框的以图片左上角为原点、向右为正方向的横坐标
+                "y": 148,          // 以图片左上角为原点、向下为正方向的纵坐标
+                "width": 323,      // 定位框的宽度
+                "height": 323,     // 定位框的高度
+                "left_eye": {      // 左眼坐标
+                    "x": 192,
+                    "y": 272
+                },
+                "right_eye": {     // 右眼坐标
+                    "x": 311,
+                    "y": 278
+                },
+                "nose": {          // 鼻子坐标
+                    "x": 252,
+                    "y": 347
+                },
+                "left_mouth": {    // 左嘴角坐标
+                    "x": 203,
+                    "y": 408
+                },
+                "right_mouth": {   // 右嘴角坐标
+                    "x": 293,
+                    "y": 413
+                }
+            }
+        }
+    ]
+}
+```
+
+## cURL示例
+
+```md
+curl -X POST -H "Cache-Control: no-cache" -H "Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW" -F "file=@path_to_image/image.jpg" -F "appId=cf53be77-f788-4353-8ae5-ce8346bf6d7f" -F "appSecret=46d41864-5cf9-4405-8f91-04c022edbe14" "http://api.jeocloud.com/jcfacepp/v1/landmark"
+```
 
 ---------
 
